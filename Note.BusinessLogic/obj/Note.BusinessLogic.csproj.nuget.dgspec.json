@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjectSimpleNote\\src\\NoteDataAccess\\NoteDataAccess.csproj": {}
+    "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\Note.BusinessLogic.csproj": {}
   },
   "projects": {
-    "E:\\ProjectSimpleNote\\src\\NoteDataAccess\\NoteDataAccess.csproj": {
+    "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\Note.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectSimpleNote\\src\\NoteDataAccess\\NoteDataAccess.csproj",
-        "projectName": "NoteDataAccess",
-        "projectPath": "E:\\ProjectSimpleNote\\src\\NoteDataAccess\\NoteDataAccess.csproj",
+        "projectUniqueName": "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\Note.BusinessLogic.csproj",
+        "projectName": "Note.BusinessLogic",
+        "projectPath": "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\Note.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectSimpleNote\\src\\NoteDataAccess\\obj\\",
+        "outputPath": "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,22 +37,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
