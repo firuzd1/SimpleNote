@@ -1,4 +1,4 @@
-namespace DataAccess;
+namespace Note.DataAccess;
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 public class EfCoreUserRepository : IUserRepository
 {
-    private readonly SimpleNoteDbContext _db;
+    private readonly NoteDbContext _db;
 
-    public EfCoreUserRepository(SimpleNoteDbContext dbContext)
+    public EfCoreUserRepository(NoteDbContext dbContext)
     {
         _db = dbContext;
     }

@@ -1,4 +1,4 @@
-namespace DataAccess;
+namespace Note.DataAccess;
 
 public readonly struct MyTaskInfo
 {

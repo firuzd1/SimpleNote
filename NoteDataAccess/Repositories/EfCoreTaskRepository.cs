@@ -2,13 +2,13 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess;
+namespace Note.DataAccess;
 
 public sealed class EfCoreTaskRepository : ITaskRepository
 {
-    private readonly SimpleNoteDbContext _db;
+    private readonly NoteDbContext _db;
 
-    public EfCoreTaskRepository(SimpleNoteDbContext dbContext)
+    public EfCoreTaskRepository(NoteDbContext dbContext)
     {
         _db = dbContext;
     }

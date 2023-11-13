@@ -1,11 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DataAccess;
+namespace Note.DataAccess;
 
-
-public sealed class SimpleNoteDbContext
-{
     public sealed class UserConfiguration : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
@@ -44,10 +41,9 @@ public sealed class SimpleNoteDbContext
             .HasColumnType("VARCHAR(20)")
             .IsRequired();
 
-            builder
-            .HasMany(u => u.tasks)
-            .WithOne(t => t.User)
-            .HasForeignKey(t => t.UserId);
+            // builder
+            // .HasMany(u => u.tasks)
+            // .WithOne(t => t.User)
+            // .HasForeignKey(t => t.UserId);
         }
     }
-}

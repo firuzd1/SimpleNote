@@ -1,11 +1,11 @@
 
-namespace DataAccess;
+namespace Note.DataAccess;
 
 
 public sealed class EfCoreCategoryRepository : ICategoryRepository
 {
-    private readonly SimpleNoteDbContext _db;
-    public EfCoreCategoryRepository(SimpleNoteDbContext dbContext)
+    private readonly NoteDbContext _db;
+    public EfCoreCategoryRepository(NoteDbContext dbContext)
     {
         _db = dbContext;
     }
