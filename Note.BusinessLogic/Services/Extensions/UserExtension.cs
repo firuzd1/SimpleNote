@@ -1,5 +1,5 @@
 namespace BusinessLogic;
-using DataAccess;
+using Note.DataAccess;
 
 public static class UserExtension
 {

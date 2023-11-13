@@ -1,4 +1,4 @@
-using DataAccess;
+using Note.DataAccess;
 namespace BusinessLogic;
 
 
@@ -12,7 +12,7 @@ public sealed class TaskService : ITaskService
     public async Task<TaskDTO> ChangeDescriptionAsync(long id, string newDescription, CancellationToken token)
     {
         MyTask myTask = await _taskRepository.ChangeDescription(id, newDescription, token);
-        return myTask.ToTaskDTO();
+        return  myTask.ToTaskDTO();
     }
 
     public async Task<TaskDTO> ChangeStatusAsync(long id, string newStatus, CancellationToken token)

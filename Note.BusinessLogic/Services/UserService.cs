@@ -1,4 +1,4 @@
-using DataAccess;
+using Note.DataAccess;
 namespace BusinessLogic;
 
 public sealed class UserService : IUserService

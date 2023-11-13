@@ -1,0 +1,15 @@
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.csproj.AssemblyReference.cache
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.AssemblyInfoInputs.cache
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.AssemblyInfo.cs
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.csproj.CoreCompileInputs.cache
+E:\ProjectSimpleNote\src\Note.BusinessLogic\bin\Debug\net7.0\Note.BusinessLogic.deps.json
+E:\ProjectSimpleNote\src\Note.BusinessLogic\bin\Debug\net7.0\Note.BusinessLogic.dll
+E:\ProjectSimpleNote\src\Note.BusinessLogic\bin\Debug\net7.0\Note.BusinessLogic.pdb
+E:\ProjectSimpleNote\src\Note.BusinessLogic\bin\Debug\net7.0\NoteDataAccess.dll
+E:\ProjectSimpleNote\src\Note.BusinessLogic\bin\Debug\net7.0\NoteDataAccess.pdb
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.csproj.CopyComplete
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.dll
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\refint\Note.BusinessLogic.dll
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.pdb
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\ref\Note.BusinessLogic.dll

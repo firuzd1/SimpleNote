@@ -1,5 +1,4 @@
 namespace BusinessLogic;
-using DataAccess;
 
 public interface IUserService
 {
