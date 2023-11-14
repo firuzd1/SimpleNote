@@ -35,21 +35,21 @@ namespace Note.DataAccess;
             // .Property(t => t.Category)
             // .HasColumnName("category");
 
-            // builder
-            // .Property(t => t.CategoryId)
-            // .HasColumnName("category_id");
+            builder
+            .Property(t => t.CategoryId)
+            .HasColumnName("category_id");
 
-            // builder
-            // .Property(t => t.UserId)
-            // .HasColumnName("user_id");
+            builder
+            .Property(t => t.UserId)
+            .HasColumnName("user_id");
 
-            // builder
-            // .HasOne(t => t.User)
-            // .WithMany(t => t.tasks)
-            // .HasForeignKey(c => c.UserId);
+            builder
+            .HasOne(t => t.User)
+            .WithMany(t => t.tasks)
+            .HasForeignKey(c => c.UserId);
 
-            //  builder
-            //  .HasOne(t => t.Category)
-            //  .WithMany(c => c.tasks);
+             builder
+             .HasOne(t => t.Category)
+             .WithMany(c => c.tasks);
         }
     }

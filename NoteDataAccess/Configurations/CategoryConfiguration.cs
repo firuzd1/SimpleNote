@@ -22,9 +22,9 @@ namespace Note.DataAccess;
             .HasColumnName("name")
             .HasColumnType("VARCHAR(150)");
 
-            // builder
-            // .HasMany(c => c.tasks)
-            // .WithOne(t => t.Category)
-            // .HasForeignKey(t => t.CategoryId);
+            builder
+            .HasMany(c => c.tasks)
+            .WithOne(t => t.Category)
+            .HasForeignKey(t => t.CategoryId);
         }
     }

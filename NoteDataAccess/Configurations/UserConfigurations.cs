@@ -41,9 +41,9 @@ namespace Note.DataAccess;
             .HasColumnType("VARCHAR(20)")
             .IsRequired();
 
-            // builder
-            // .HasMany(u => u.tasks)
-            // .WithOne(t => t.User)
-            // .HasForeignKey(t => t.UserId);
+            builder
+            .HasMany(u => u.tasks)
+            .WithOne(t => t.User)
+            .HasForeignKey(t => t.UserId);
         }
     }
