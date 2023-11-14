@@ -10,7 +10,9 @@ public static class TaskExtension
             task.Id,
             task.Title,
             task.Description,
-            task.Status.ToString()
+            task.Status.ToString(),
+            task.UserId,
+            task.CategoryId
         );
         return taskDTO;
     }
@@ -22,7 +24,9 @@ public static class TaskExtension
             Id = taskDTO.Id,
             Title = taskDTO.Title,
             Description = taskDTO.Description,
-            Status = taskDTO.Status.ToStatusEnum()
+            Status = taskDTO.Status.ToStatusEnum(),
+            UserId = taskDTO.UserId,
+            CategoryId = taskDTO.CategoryId
         };
         return myTask;
     }

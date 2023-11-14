@@ -2,6 +2,8 @@ using BusinessLogic;
 using Microsoft.AspNetCore.Mvc;
 
 
+[ApiController]
+[Route("categories")]
 public sealed class CategoryController : ControllerBase
 {
 

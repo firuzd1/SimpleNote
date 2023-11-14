@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NoteDataAccess.Migrations
 {
     [DbContext(typeof(NoteDbContext))]
-    [Migration("20231114035007_AddToDataBase")]
-    partial class AddToDataBase
+    [Migration("20231114045823_AddtoDataBase")]
+    partial class AddtoDataBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -13,7 +13,7 @@ namespace Note.DataAccess;
 
             builder
             .Property(u => u.Id)
-            .HasColumnType("SERIAL")
+            .UseIdentityAlwaysColumn()
             .HasColumnName("id")
             .IsRequired();
 

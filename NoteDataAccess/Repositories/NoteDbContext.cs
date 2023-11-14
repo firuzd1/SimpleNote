@@ -32,10 +32,10 @@ public sealed class NoteDbContext : DbContext
 public sealed class NoteDbContext : DbContext
 {
     
-    //  public NoteDbContext(DbContextOptions<NoteDbContext> options) : base(options)
-    //  {
+     public NoteDbContext(DbContextOptions<NoteDbContext> options) : base(options)
+     {
 
-    //  }
+     }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

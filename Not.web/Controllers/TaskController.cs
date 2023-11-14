@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 using BusinessLogic;
 
-
+[ApiController]
+[Route("tasks")]
 public sealed class TaskController : ControllerBase
 {
     private readonly ITaskService _taskService;

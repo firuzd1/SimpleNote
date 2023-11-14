@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BlqQlEi+g7qgVT6QvxdUAnmbBrWTgyWZ0JQRd5bxKisuArGil11JNWjQfPskBXyToo2cjwT5m6MWytDN6Pphpg==",
+  "dgSpecHash": "Fy6VEy7gh5HPbkQ9XDQuyG/ku3z1Vqzt7/c5vJ6H9EHYmNU0jjhuy9H55PK+SNc1ChmFC0PHxBBp02CFQKdmcA==",
   "success": true,
   "projectFilePath": "E:\\ProjectSimpleNote\\src\\Not.web\\Not.web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",

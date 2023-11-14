@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NoteDataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class AddToDataBase : Migration
+    public partial class AddtoDataBase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,7 @@ namespace NoteDataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_id", x => x.id);
+                    table.PrimaryKey("pk_category_id", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -37,7 +37,7 @@ namespace NoteDataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_id", x => x.id);
+                    table.PrimaryKey("pk_user_id", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -54,7 +54,7 @@ namespace NoteDataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_id", x => x.id);
+                    table.PrimaryKey("pk_task_id", x => x.id);
                     table.ForeignKey(
                         name: "FK_task_categories_category_id",
                         column: x => x.category_id,
