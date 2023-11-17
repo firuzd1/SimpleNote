@@ -560,6 +560,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "FluentValidation.AspNetCore": "11.3.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "NoteDataAccess": "1.0.0"
         },
@@ -1624,7 +1625,6 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FluentValidation.AspNetCore >= 11.3.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
       "Note.BusinessLogic >= 1.0.0",
@@ -1673,10 +1673,6 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "FluentValidation.AspNetCore": {
-            "target": "Package",
-            "version": "[11.3.0, )"
-          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.9, )"

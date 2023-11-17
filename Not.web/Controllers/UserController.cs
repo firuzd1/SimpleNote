@@ -29,8 +29,10 @@ public sealed class UserController : ControllerBase
         => _userService.ChangePasswordAsync(id, newPassword, token);
 
     [HttpPost]
-    public Task<UserDTO> CreateUserAsync([FromBody] UserDTO user, CancellationToken token) 
-        => _userService.CreateUserAsync(user, token);
+    public async Task<UserDTO> CreateUserAsync([FromBody] UserDTO user, CancellationToken token) 
+    {
+        return await _userService.CreateUserAsync(user, token);
+    }
 
     [HttpDelete("{id}")]
     public Task<bool> DeleteUserAsync(long id, CancellationToken token) 

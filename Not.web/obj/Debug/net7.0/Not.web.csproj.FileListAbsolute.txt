@@ -45,3 +45,6 @@ E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Mono.TextTemplating.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\System.CodeDom.dll
+E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.dll
+E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

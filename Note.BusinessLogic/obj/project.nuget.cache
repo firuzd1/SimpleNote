@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "352n/4ZhwGGnEEIJEuSGSIL5VhV9QntN11Bx0dc4YL5OdSxNwzqudE/OMIecBmSd+gZeiYjIGGP+JAuTP0fRtg==",
+  "dgSpecHash": "53j6+XFqVzsENpdS5RCkJvI83rt/FsAicNz+l5VLncuOBAiuDwsPP2lJJSSfOGzlECKMNgIhMMeRx0k6GNYwFQ==",
   "success": true,
   "projectFilePath": "E:\\ProjectSimpleNote\\src\\Note.BusinessLogic\\Note.BusinessLogic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",

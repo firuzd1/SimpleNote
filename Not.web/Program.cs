@@ -1,3 +1,4 @@
+using Note.Web;
 using BusinessLogic;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 */
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.MapControllers();
-
 app.Run();

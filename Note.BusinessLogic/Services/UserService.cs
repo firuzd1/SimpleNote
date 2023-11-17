@@ -34,7 +34,7 @@ public sealed class UserService : IUserService
     }
 
     public async Task<UserDTO> CreateUserAsync(UserDTO userDTO, CancellationToken token)
-    {
+    {   
         User user = await _userRepository.CreateUser(userDTO.ToUser(), token);
         return user.ToUserDTO();
     }

@@ -1,5 +1,6 @@
 using Note.DataAccess;
 using Microsoft.Extensions.DependencyInjection;
+using FluentValidation.AspNetCore;
 
 namespace BusinessLogic;
 
