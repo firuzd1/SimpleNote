@@ -12,7 +12,7 @@ public class EfCoreUserRepository : IUserRepository
     {
         _db = dbContext;
     }
-    public async Task<User> ChangeEmail(long id, string newEmail, CancellationToken token)
+    public async Task<User> ChangeEmailAsync(long id, string newEmail, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)
@@ -23,7 +23,7 @@ public class EfCoreUserRepository : IUserRepository
         return user;
     }
 
-    public async Task<User> ChangeLastName(long id, string newLastName, CancellationToken token)
+    public async Task<User> ChangeLastNameAsync(long id, string newLastName, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)
@@ -34,7 +34,7 @@ public class EfCoreUserRepository : IUserRepository
         return user;
     }
 
-    public async Task<User> ChangeName(long id, string name, CancellationToken token)
+    public async Task<User> ChangeNameAsync(long id, string name, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)
@@ -45,7 +45,7 @@ public class EfCoreUserRepository : IUserRepository
         return user;
     }
 
-    public async Task<User> ChangePassword(long id, string newPassword, CancellationToken token)
+    public async Task<User> ChangePasswordAsync(long id, string newPassword, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)
@@ -56,14 +56,14 @@ public class EfCoreUserRepository : IUserRepository
         return user;
     }
 
-    public async Task<User> CreateUser(User user, CancellationToken token)
+    public async Task<User> CreateUserAsync(User user, CancellationToken token)
     {
         await _db.users.AddAsync(user, token);
         await _db.SaveChangesAsync(token);
         return user;
     }
 
-    public async Task<bool> DeleteUser(long id, CancellationToken token)
+    public async Task<bool> DeleteUserAsync(long id, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)
@@ -74,7 +74,7 @@ public class EfCoreUserRepository : IUserRepository
         return true;
     }
 
-    public async Task<User> GetUser(long id, CancellationToken token)
+    public async Task<User> GetUserAsync(long id, CancellationToken token)
     {
         User? user = await _db.users.FindAsync(id, token);
         if(user is null)

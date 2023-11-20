@@ -13,7 +13,7 @@ public sealed class EfCoreTaskRepository : ITaskRepository
         _db = dbContext;
     }
 
-    public async Task<MyTask> ChangeDescription(long id, string newDescription, CancellationToken token)
+    public async Task<MyTask> ChangeDescriptionAsync(long id, string newDescription, CancellationToken token)
     {
         MyTask? task = await _db.tasks.FindAsync(id, token);
         if(task is null)
@@ -24,7 +24,7 @@ public sealed class EfCoreTaskRepository : ITaskRepository
         return task;
     }
 
-    public async Task<MyTask> ChangeStatus(long id, MyTaskStatus newStatus, CancellationToken token)
+    public async Task<MyTask> ChangeStatusAsync(long id, MyTaskStatus newStatus, CancellationToken token)
     {
         MyTask? task = await _db.tasks.FindAsync(id, token);
         if(task is null)
@@ -35,7 +35,7 @@ public sealed class EfCoreTaskRepository : ITaskRepository
         return task;
     }
 
-    public async Task<MyTask> ChangeTitle(long id, string newTitle, CancellationToken token)
+    public async Task<MyTask> ChangeTitleAsync(long id, string newTitle, CancellationToken token)
     {
         MyTask? task = await _db.tasks.FindAsync(id, token);
         if(task is null)
@@ -46,14 +46,14 @@ public sealed class EfCoreTaskRepository : ITaskRepository
         return task;
     }
 
-    public async Task<MyTask> CreateTask(MyTask task, CancellationToken token)
+    public async Task<MyTask> CreateTaskAsync(MyTask task, CancellationToken token)
     {
         await _db.tasks.AddAsync(task, token);
         await _db.SaveChangesAsync(token);
         return task;
     }
 
-    public async Task<bool> DeleteTask(long id, CancellationToken token)
+    public async Task<bool> DeleteTaskAsync(long id, CancellationToken token)
     {
         MyTask? task = await _db.tasks.FindAsync(id, token);
         if(task is null)
@@ -63,7 +63,7 @@ public sealed class EfCoreTaskRepository : ITaskRepository
         return true;
     }
 
-    public async Task<MyTask> GetTask(long id, CancellationToken token)
+    public async Task<MyTask> GetTaskAsync(long id, CancellationToken token)
     {
         MyTask? task = await _db.tasks.FindAsync(id, token);
         if(task is null)

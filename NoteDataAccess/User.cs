@@ -33,15 +33,4 @@ public sealed class User
 
     public ICollection<MyTask>? tasks { get; set; }
 
-     // private string? _userFirstName;
-    // private string? _userLastName;
-    // private string? _userEmail;
-    // private string? _userPassword;
-    // public long Id { get; set; }
-
-    // public long Id { get; set; }
-    // public string FirstName { get; set; }
-    // public string LastName { get; set; }
-    // public string Email { get; set; }
-    // public string Password { get; set; }
 }

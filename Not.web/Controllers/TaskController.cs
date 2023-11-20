@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 
 using BusinessLogic;
+using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("tasks")]
+[Authorize]
 public sealed class TaskController : ControllerBase
 {
     private readonly ITaskService _taskService;

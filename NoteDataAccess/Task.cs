@@ -33,19 +33,4 @@ public sealed class MyTask
     public long CategoryId { get; set; }
    public Category? Category { get; set; }
 
-    // private string _title;
-    // private string _description;
-    // private MyTaskStatus _taskStatus;
-    // private User? _user;
-    // private Category? _category;
-
-    // public long Id { get; set; }
-    // public string Title { get; set; }
-    // public string Description { get; set; }
-    // public MyTaskStatus Status { get; set; } 
-    // public Category Category {get;set;}
-
-    // public User User { get; set; }
-    // public long CategoryId { get; set; }
-    // public long UserId { get; set; }
 }

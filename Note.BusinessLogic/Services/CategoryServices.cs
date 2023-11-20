@@ -11,16 +11,16 @@ public sealed class CategoryService : ICategoryService
     }
     public async Task<CategoryDTO> ChangeCategoryAsync(long id, string newName, CancellationToken token)
     {
-        Category category = await _categoryRepository.ChangeCategory(id, newName, token);
+        Category category = await _categoryRepository.ChangeCategoryAsync(id, newName, token);
         return category.ToCategoryDTO();
     }
 
     public async Task<CategoryDTO> CreateCategoryAsync(CategoryDTO categoryDTO, CancellationToken token)
     {
-        Category category = await _categoryRepository.CreateCategory(categoryDTO.ToCategory(), token);
+        Category category = await _categoryRepository.CreateCategoryAsync(categoryDTO.ToCategory(), token);
         return category.ToCategoryDTO();
     }
 
     public Task<bool> DeleteCategoryAsync(long id, CancellationToken token) 
-        => _categoryRepository.DeleteCategory(id, token);
+        => _categoryRepository.DeleteCategoryAsync(id, token);
 }
