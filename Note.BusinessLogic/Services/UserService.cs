@@ -11,40 +11,40 @@ public sealed class UserService : IUserService
     }
     public async Task<UserDTO> ChangeEmailAsync(long id, string newEmail, CancellationToken token)
     {
-       User user = await _userRepository.ChangeEmail(id, newEmail, token);
+       User user = await _userRepository.ChangeEmailAsync(id, newEmail, token);
        return user.ToUserDTO();
     }
 
     public async Task<UserDTO> ChangeLastNameAsync(long id, string newLastName, CancellationToken token)
     {
-        User user = await _userRepository.ChangeLastName(id, newLastName, token);
+        User user = await _userRepository.ChangeLastNameAsync(id, newLastName, token);
         return user.ToUserDTO();
     }
 
     public async Task<UserDTO> ChangeNameAsync(long id, string name, CancellationToken token)
     {
-        User user = await _userRepository.ChangeName(id, name, token);
+        User user = await _userRepository.ChangeNameAsync(id, name, token);
         return user.ToUserDTO();
     }
 
     public async Task<UserDTO> ChangePasswordAsync(long id, string newPassword, CancellationToken token)
     {
-        User user = await _userRepository.ChangePassword(id, newPassword, token);
+        User user = await _userRepository.ChangePasswordAsync(id, newPassword, token);
         return user.ToUserDTO();
     }
 
     public async Task<UserDTO> CreateUserAsync(UserDTO userDTO, CancellationToken token)
     {   
-        User user = await _userRepository.CreateUser(userDTO.ToUser(), token);
+        User user = await _userRepository.CreateUserAsync(userDTO.ToUser(), token);
         return user.ToUserDTO();
     }
 
     public Task<bool> DeleteUserAsync(long id, CancellationToken token) 
-        => _userRepository.DeleteUser(id, token);
+        => _userRepository.DeleteUserAsync(id, token);
 
     public async Task<UserDTO> GetUserAsync(long id, CancellationToken token)
     {
-        User user = await _userRepository.GetUser(id, token);
+        User user = await _userRepository.GetUserAsync(id, token);
         return user.ToUserDTO();
     }
 }

@@ -1,7 +1,7 @@
 using Note.DataAccess;
 using Microsoft.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
-
+using Microsoft.Extensions.Configuration;
 namespace BusinessLogic;
 
 public static class ServiceExtension

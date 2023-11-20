@@ -1,8 +1,10 @@
 using BusinessLogic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("users")]
+[Authorize]
 public sealed class UserController : ControllerBase
 {
     private IUserService _userService;
@@ -28,7 +30,8 @@ public sealed class UserController : ControllerBase
     public Task<UserDTO> ChangePasswordAsync(long id, [FromQuery] string newPassword, CancellationToken token) 
         => _userService.ChangePasswordAsync(id, newPassword, token);
 
-    [HttpPost]
+    [HttpPost("regis")]
+    [AllowAnonymous]
     public async Task<UserDTO> CreateUserAsync([FromBody] UserDTO user, CancellationToken token) 
     {
         return await _userService.CreateUserAsync(user, token);

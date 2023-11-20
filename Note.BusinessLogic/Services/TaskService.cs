@@ -11,34 +11,34 @@ public sealed class TaskService : ITaskService
     }
     public async Task<TaskDTO> ChangeDescriptionAsync(long id, string newDescription, CancellationToken token)
     {
-        MyTask myTask = await _taskRepository.ChangeDescription(id, newDescription, token);
+        MyTask myTask = await _taskRepository.ChangeDescriptionAsync(id, newDescription, token);
         return  myTask.ToTaskDTO();
     }
 
     public async Task<TaskDTO> ChangeStatusAsync(long id, string newStatus, CancellationToken token)
     {
-        MyTask myTask = await _taskRepository.ChangeStatus(id, newStatus.ToStatusEnum(), token);
+        MyTask myTask = await _taskRepository.ChangeStatusAsync(id, newStatus.ToStatusEnum(), token);
         return myTask.ToTaskDTO();
     }
 
     public async Task<TaskDTO> ChangeTitleAsync(long id, string newTitle, CancellationToken token)
     {
-        MyTask myTask = await _taskRepository.ChangeTitle(id, newTitle, token);
+        MyTask myTask = await _taskRepository.ChangeTitleAsync(id, newTitle, token);
         return myTask.ToTaskDTO();
     }
 
     public async Task<TaskDTO> CreateTaskAsync(TaskDTO task, CancellationToken token)
     {
-       await _taskRepository.CreateTask(task.ToMyTask(), token);
+       await _taskRepository.CreateTaskAsync(task.ToMyTask(), token);
        return task;
     }
 
     public Task<bool> DeleteTaskAsync(long id, CancellationToken token) 
-        => _taskRepository.DeleteTask(id, token);
+        => _taskRepository.DeleteTaskAsync(id, token);
 
     public async Task<TaskDTO> GetTaskAsync(long id, CancellationToken token)
     {
-        MyTask myTask = await _taskRepository.GetTask(id, token);
+        MyTask myTask = await _taskRepository.GetTaskAsync(id, token);
         return myTask.ToTaskDTO();
     }
 }
