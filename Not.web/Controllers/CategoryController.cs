@@ -20,6 +20,10 @@ public sealed class CategoryController : ControllerBase
     public Task<CategoryDTO> CreateCategoryAsync([FromBody] CategoryDTO categoryDTO, CancellationToken token) 
         => _categoryService.CreateCategoryAsync(categoryDTO, token);
 
+    [HttpGet("{id}")]
+    public Task<CategoryDTO> GetCategoryAsync(long id, CancellationToken token)
+        => _categoryService.GetCategoryAsync(id, token);
+
     [HttpDelete("{id}")]
     public Task<bool> DeleteCategoryAsync(long id, CancellationToken token) 
         => _categoryService.DeleteCategoryAsync(id, token);

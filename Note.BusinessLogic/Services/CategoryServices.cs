@@ -21,6 +21,12 @@ public sealed class CategoryService : ICategoryService
         return category.ToCategoryDTO();
     }
 
+    public async Task<CategoryDTO> GetCategoryAsync(long id, CancellationToken token)
+    {
+        Category category = await _categoryRepository.GetCategoryAsync(id, token);
+        return category.ToCategoryDTO();
+    }
+
     public Task<bool> DeleteCategoryAsync(long id, CancellationToken token) 
         => _categoryRepository.DeleteCategoryAsync(id, token);
 }
