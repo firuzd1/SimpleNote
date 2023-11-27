@@ -9,6 +9,14 @@ public sealed class EfCoreCategoryRepository : ICategoryRepository
     {
         _db = dbContext;
     }
+    public async Task<Category> GetCategoryAsync(long id, CancellationToken token)
+    {
+        Category? category = await _db.categories.FindAsync(id, token);
+        if(category is null)
+            throw new NullReferenceException("Category not found! ");
+
+        return category;
+    }
     public async Task<Category> ChangeCategoryAsync(long id, string newName, CancellationToken token)
     {
         Category? category = await _db.categories.FindAsync(id, token);
