@@ -6,7 +6,6 @@ E:\ProjectSimpleNote\src\Not.web\obj\Debug\net7.0\Not.web.csproj.CoreCompileInpu
 E:\ProjectSimpleNote\src\Not.web\obj\Debug\net7.0\Not.web.MvcApplicationPartsAssemblyInfo.cs
 E:\ProjectSimpleNote\src\Not.web\obj\Debug\net7.0\Not.web.MvcApplicationPartsAssemblyInfo.cache
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\appsettings.Development.json
-E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\appsettings.json
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Not.web.exe
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Not.web.deps.json
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\Not.web.runtimeconfig.json
@@ -48,3 +47,5 @@ E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\System.CodeDom.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\appsettings.Production.json
+E:\ProjectSimpleNote\src\Not.web\obj\Debug\net7.0\Not.web.sourcelink.json

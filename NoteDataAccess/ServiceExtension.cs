@@ -1,14 +1,16 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Note.DataAccess;
 
 public static class ServiceExtension
 {
-    public static void ConfigureDataAccess(this IServiceCollection services)
+    private static string _DefaultConnectionkeyName = "DefaultConnection";
+    public static void ConfigureDataAccess(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<NoteDbContext>(
-            opt => opt.UseNpgsql("Server=localhost;Port=5432;User ID=postgres;Password=12345;Database=SimpleNote")
+            opt => opt.UseNpgsql(configuration.GetConnectionString(_DefaultConnectionkeyName))
       );
 
         services.AddScoped<IUserRepository, EfCoreUserRepository>();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ifg6k6dMEkuiMcjM/VQbL/gOUbwiI+eV8FMt5zP0AgzFjYV8AlQA13CSRQ4PqCqEM9c/NzWJnw4lvlSaQEWg/g==",
+  "dgSpecHash": "w5vqw+zqScBAuhp6lWWtB+oItI+hFa2COwadMJT/WAigDPXK4nTpxAJjvGRswoh9nZVlKArPNyUWnRTTsZv3iA==",
   "success": true,
   "projectFilePath": "E:\\ProjectSimpleNote\\src\\Not.web\\Not.web.csproj",
   "expectedPackageFiles": [
@@ -36,7 +36,11 @@
     "C:\\Users\\user\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

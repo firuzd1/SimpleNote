@@ -1,12 +1,12 @@
 using Note.Web;
 using BusinessLogic;
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection(Constants.ConnectionStringsSectionName));
+builder.Services.Configure<ApiKeyAuthenticationOptions>(builder.Configuration.GetSection(Constants.ApiKeySectionName));
 
 builder.Services.AddHttpContextAccessor();
-builder.Services.ConfigureSimpleNoteServices();
+builder.Services.ConfigureSimpleNoteServices(builder.Configuration);
 builder.Services.AddAuthentication
     (ApiKeyAuthenticationOptions.ApiKeyScheme)
         .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>(ApiKeyAuthenticationOptions.ApiKeyScheme,
@@ -18,7 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -26,8 +26,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
