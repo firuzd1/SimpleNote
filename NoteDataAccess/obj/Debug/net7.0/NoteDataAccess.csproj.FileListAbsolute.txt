@@ -12,3 +12,4 @@ E:\ProjectSimpleNote\src\NoteDataAccess\obj\Debug\net7.0\refint\NoteDataAccess.d
 E:\ProjectSimpleNote\src\NoteDataAccess\obj\Debug\net7.0\NoteDataAccess.pdb
 E:\ProjectSimpleNote\src\NoteDataAccess\obj\Debug\net7.0\NoteDataAccess.genruntimeconfig.cache
 E:\ProjectSimpleNote\src\NoteDataAccess\obj\Debug\net7.0\ref\NoteDataAccess.dll
+E:\ProjectSimpleNote\src\NoteDataAccess\obj\Debug\net7.0\NoteDataAccess.sourcelink.json

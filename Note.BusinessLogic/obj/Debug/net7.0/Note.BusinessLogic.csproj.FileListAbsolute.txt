@@ -13,3 +13,4 @@ E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.
 E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\refint\Note.BusinessLogic.dll
 E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.pdb
 E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\ref\Note.BusinessLogic.dll
+E:\ProjectSimpleNote\src\Note.BusinessLogic\obj\Debug\net7.0\Note.BusinessLogic.sourcelink.json

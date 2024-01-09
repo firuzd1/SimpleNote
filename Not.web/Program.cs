@@ -3,6 +3,7 @@ using BusinessLogic;
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection(Constants.ConnectionStringsSectionName));
+builder.Services.Configure<ApiKeyAuthenticationOptions>(builder.Configuration.GetSection(Constants.ApiKeySectionName));
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.ConfigureSimpleNoteServices(builder.Configuration);

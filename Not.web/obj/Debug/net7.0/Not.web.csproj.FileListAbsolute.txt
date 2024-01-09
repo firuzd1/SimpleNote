@@ -48,3 +48,4 @@ E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 E:\ProjectSimpleNote\src\Not.web\bin\Debug\net7.0\appsettings.Production.json
+E:\ProjectSimpleNote\src\Not.web\obj\Debug\net7.0\Not.web.sourcelink.json
